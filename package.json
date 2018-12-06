@@ -1,0 +1,21 @@
+{
+  "name": "nuxt-semanticui",
+  "version": "1.0.0",
+  "description": "Semantic is a development framework that helps create beautiful, responsive layouts using human-friendly HTML.",
+  "author": "Tobias Thiele",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.0.0",
+    "nuxt-start": "^2.3.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
