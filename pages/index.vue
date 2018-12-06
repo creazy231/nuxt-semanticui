@@ -1,66 +1,46 @@
 <template>
-  <section class="container">
-    <div>
-      <logo/>
-      <h1 class="title">
-        nuxt-semanticui
-      </h1>
-      <h2 class="subtitle">
-        Semantic is a development framework that helps create beautiful, responsive layouts using human-friendly HTML.
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
+    <div id="main">
+        <header>
+            <div class="ui inverted segment">
+                <div class="ui inverted secondary pointing menu">
+                    <img src="https://semantic-ui.com/images/logo.png" alt="">
+                    <a class="active item">
+                        Home
+                    </a>
+                    <a class="item">
+                        Messages
+                    </a>
+                    <a class="item">
+                        Friends
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="ui segment">
+                <div class="ui active dimmer">
+                    <div class="ui large text loader">Loading</div>
+                </div>
+                <img src="https://semantic-ui.com/images/wireframe/short-paragraph.png" alt="">
+                <img src="https://semantic-ui.com/images/wireframe/short-paragraph.png" alt="">
+                <img src="https://semantic-ui.com/images/wireframe/short-paragraph.png" alt="">
+                <img src="https://semantic-ui.com/images/wireframe/short-paragraph.png" alt="">
+                <img src="https://semantic-ui.com/images/wireframe/short-paragraph.png" alt="">
+                <img src="https://semantic-ui.com/images/wireframe/short-paragraph.png" alt="">
+            </div>
+        </main>
     </div>
-  </section>
 </template>
 
-<script>
-import Logo from '~/components/Logo.vue'
+<style scoped>
+    header > div:first-of-type {
+        border-radius: 0;
+    }
 
-export default {
-  components: {
-    Logo
-  }
-}
-</script>
-
-<style>
-
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
+    header img:first-of-type {
+        width: 30px;
+        height: 30px;
+        margin: auto 30px auto 0;
+    }
 </style>
